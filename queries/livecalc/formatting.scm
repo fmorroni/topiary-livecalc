@@ -30,6 +30,14 @@
   "=>"
 ] @prepend_space @append_space
 
+(unary_expression
+  operator: _ @append_antispace
+)
+
+(parenthesized_expression
+  (_) @prepend_antispace @append_antispace
+)
+
 (unit_times_expression
   operator: _ @prepend_antispace @append_antispace
 )
